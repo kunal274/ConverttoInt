@@ -1,0 +1,23 @@
+package PracticeQuestions;
+
+import java.util.Scanner;
+
+public class ConverttoInt {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enetr the integer:");
+        try {
+            String userInput = sc.nextLine();
+            int number = Integer.parseInt(userInput);
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input! Please enter a valid integer.");
+
+        } catch (NullPointerException e) {
+            System.out.println("Input cannot be null");
+
+        }finally{
+                sc.close();
+            }
+        }
+    }
+
